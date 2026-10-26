@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel de controle e telemetria responsivo para monitoramento de dados em tempo real.">
+    <meta name="keywords" content="Data Science, Telemetria, Dashboard, HTML5, CSS3, Responsivo">
+    <meta name="author" content="Seu Nome">
+    <title>Painel de Controle - Telemetria em Tempo Real</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>DataControl <span>DS</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Visão Geral</a></li>
+                    <li><a href="#"><i class="fa-solid fa-server"></i> Sensores</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="user-status">
+                <span class="status-indicator online"></span>
+                <span>Sistema Operacional</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal / Dashboard -->
+    <main class="dashboard-container">
+        
+        <section class="welcome-section">
+            <h2>Painel de Telemetria e Monitoramento</h2>
+            <p>Acompanhamento de métricas e status dos nós de dados em tempo real.</p>
+        </section>
+
+        <!-- Seção de Cards Informativos de Telemetria -->
+        <section class="telemetry-grid" aria-label="Métricas de Telemetria">
+            
+            <article class="card">
+                <div class="card-header">
+                    <h3>Temperatura do Core</h3>
+                    <i class="fa-solid fa-temperature-high card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <p class="card-value">42.5 <span>°C</span></p>
+                    <p class="card-status status-ok"><i class="fa-solid fa-circle-check"></i> Dentro do limite</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3>Processamento (CPU)</h3>
+                    <i class="fa-solid fa-microchip card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <p class="card-value">78.4 <span>%</span></p>
+                    <p class="card-status status-warning"><i class="fa-solid fa-triangle-exclamation"></i> Carga alta</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3>Uso de Memória RAM</h3>
+                    <i class="fa-solid fa-memory card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <p class="card-value">12.8 <span>GB</span></p>
+                    <p class="card-status status-ok"><i class="fa-solid fa-circle-check"></i> 16 GB Disponíveis</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3>Latência da Rede</h3>
+                    <i class="fa-solid fa-wifi card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <p class="card-value">14 <span>ms</span></p>
+                    <p class="card-status status-ok"><i class="fa-solid fa-circle-check"></i> Conexão estável</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Seção de Acionamento / Painel de Ações -->
+        <section class="action-section">
+            <header class="section-title">
+                <h2><i class="fa-solid fa-sliders"></i> Painel de Acionamento e Controle</h2>
+                <p>Execute comandos e acione procedimentos do sistema.</p>
+            </header>
+
+            <div class="action-grid">
+                <div class="action-card">
+                    <i class="fa-solid fa-rotate-right action-icon"></i>
+                    <h4>Reiniciar Coleta</h4>
+                    <p>Reinicia os serviços de ingestão de dados de telemetria.</p>
+                    <button type="button" class="btn btn-primary">Acionar Serviço</button>
+                </div>
+
+                <div class="action-card">
+                    <i class="fa-solid fa-database action-icon"></i>
+                    <h4>Backup de Dados</h4>
+                    <p>Gera um snapshot dos dados gravados no banco de dados.</p>
+                    <button type="button" class="btn btn-secondary">Iniciar Backup</button>
+                </div>
+
+                <div class="action-card danger">
+                    <i class="fa-solid fa-power-off action-icon"></i>
+                    <h4>Modo de Segurança</h4>
+                    <p>Interrompe a captura de dados e coloca o servidor em espera.</p>
+                    <button type="button" class="btn btn-danger">Ativar Emergência</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 DataControl DS - Atividade de Construção de Layouts Web.</p>
+            <p>Desenvolvido com HTML5 Semântico e CSS3 Responsivo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
